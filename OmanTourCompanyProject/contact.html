@@ -59,7 +59,7 @@
                     <option value="custom">Custom Tour</option>
                 </select><br><br>
                 <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea><br><br>
-                <button type="submit" id="submit-btn" class="submit-button">Send Message</button>
+                <button type="submit" id="submit-btn" class="submit-button" onclick="gtag('event', 'CTR-Send Message', {event_category: 'callToAction-Send Message', event_label: 'Send Message'})">Send Message</button>
             </form>
         </section>
 
