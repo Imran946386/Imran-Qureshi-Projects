@@ -23,10 +23,10 @@
         <p class="nav-phone">📱 Phone: <a href="telto:+968 1234 5678">+968 1234 5678</a></p>
         <p class="nav-email">✉️ Email: <a href="mailto:info@omantourcompany.com">info@omantourcompany.com</a></p>
         <nav>
-            <a href="index.html">About</a>
-            <a href="tours.html">Tours</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'About'});">About</a>
+            <a href="tours.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Tours'});">Tours</a>
+            <a href="gallery.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Gallery'});">Gallery</a>
+            <a href="contact.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'});">Contact</a>
         </nav>
     </header>
 
@@ -45,7 +45,7 @@
                 <li>Explore Mutrah Souq</li>
                 <li>Tour the Royal Opera House</li>
             </ul>
-            <button onclick="alert('Thank you for your interest in the Muscat City Tour! Booking system coming soon.')">Book Now</button>
+            <button onclick="gtag('event', 'CTR-Book Now', {event_category: 'callToAction-Book Now', event_label: 'Book Now'});" onclick="alert('Thank you for your interest in the Muscat City Tour! Booking system coming soon.')">Book Now</button>
             <!-- Feature Coming Soon: Interactive tour booking system with real-time availability -->
         </article>
 
@@ -58,7 +58,7 @@
                 <li>Bedouin camp experience</li>
                 <li>Stargazing at night</li>
             </ul>
-            <button onclick="alert('Thank you for your interest in the Desert Safari Tour! Booking system coming soon.')">Book Now</button>
+            <button onclick="gtag('event', 'CTR-Book Now', {event_category: 'callToAction-Book Now', event_label: 'Book Now'});" onclick="alert('Thank you for your interest in the Desert Safari Tour! Booking system coming soon.')">Book Now</button>
             <!-- Feature Coming Soon: Interactive tour booking system with real-time availability -->
         </article>
 
@@ -71,7 +71,7 @@
                 <li>Swimming in natural pools</li>
                 <li>Rock climbing options</li>
             </ul>
-            <button onclick="alert('Thank you for your interest in the Wadi Adventures Tour! Booking system coming soon.')">Book Now</button>
+            <button onclick="gtag('event', 'CTR-Book Now', {event_category: 'callToAction-Book Now', event_label: 'Book Now'});"onclick="alert('Thank you for your interest in the Wadi Adventures Tour! Booking system coming soon.')">Book Now</button>
             <!-- Feature Coming Soon: Interactive tour booking system with real-time availability -->
         </article>
     </section>
@@ -89,16 +89,16 @@
     <aside class="sidebar">
         <h3>Special Offers</h3>
         <p>Book any tour this month and get 15% off your next adventure!</p>
-        <button class="offer-button" onclick="alert('Stay tuned for our 15% off discount when this feature becomes available, stay tuned!')">Learn More </button>
+        <button class="offer-button" onclick="gtag('event', 'CTR-Learn More', {event_category: 'callToAction-Learn More', event_label: 'Learn More'});" onclick="alert('Stay tuned for our 15% off discount when this feature becomes available, stay tuned!')">Learn More</button>
     </aside>
 
     <footer>
         <p>&copy; 2025 Oman Tour Company | All Rights Reserved | Created by Imran Qureshi | Picture Authors: 
-        <a href="https://unsplash.com/@anfalshams" target="_blank">Anfal Shamsudeen</a>,
-        <a href="https://unsplash.com/@silasbaisch" target="_blank">Silas Baisch</a>,
-        <a href="https://unsplash.com/@lenabalk" target="_blank">Lena Balk</a>,
-        <a href="https://unsplash.com/@emm_harri" target="_blank">Emma Harrisova</a>,
-        <a href="https://unsplash.com/@adil_r93" target="_blank">Adil Riyami</p>
+        <a href="https://unsplash.com/@anfalshams" target="_blank" onclick="gtag('event', 'author_click', {event_category: 'authors', event_label: 'Anfal Shamsudeen'})">Anfal Shamsudeen</a>,
+        <a href="https://unsplash.com/@silasbaisch" target="_blank" onclick="gtag('event', 'author_click', {event_category: 'authors', event_label: 'Silas Baisch'})">Silas Baisch</a>,
+        <a href="https://unsplash.com/@lenabalk" target="_blank" onclick="gtag('event', 'author_click', {event_category: 'authors', event_label: 'Lena Balk'})">Lena Balk</a>,
+        <a href="https://unsplash.com/@emm_harri" target="_blank" onclick="gtag('event', 'author_click', {event_category: 'authors', event_label: 'Emma Harrisova'})">Emma Harrisova</a>,
+        <a href="https://unsplash.com/@adil_r93" target="_blank" onclick="gtag('event', 'author_click', {event_category: 'authors', event_label: 'Adil Riyami'})">Adil Riyami</p>
     </footer>
 </body>
 </html>
