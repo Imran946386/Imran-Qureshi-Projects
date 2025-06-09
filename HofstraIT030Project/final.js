@@ -22,11 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.cookie = `name=${userName}; max-age=${60 * 60 * 24 * 7}; path=/`;
     document.cookie = `theme=${userTheme}; max-age=${60 * 60 * 24 * 7}; path=/`;
 
-    // Apply personalized greeting
-    const welcome = document.getElementById("welcome-message");
-    if (welcome && userName) {
-        welcome.textContent = `Great to see you again, ${userName}`;
-    }
     // Apply theme
     if (userTheme === 'dark') {
         document.body.style.backgroundColor = "#121212";
