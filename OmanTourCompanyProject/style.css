@@ -233,6 +233,9 @@ footer {
     .sidebar {
         display: none;
     }
+    .nav-phone, .nav-email {
+      display: none;
+    }
 }
 
 @media(max-width: 480px) {
