@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.cookie = `name=${userName}; max-age=${60 * 60 * 24 * 7}; path=/`;
     document.cookie = `referral=${referralSource}; max-age=${60 * 60 * 24 * 7}; path=/`;
 
-    // Initializes EmailJS with your public key
+    // Initializes EmailJS with public key
     document.addEventListener('DOMContentLoaded', function() {
     emailjs.init("NGnoHNIBJboHhKT5N");});
 
