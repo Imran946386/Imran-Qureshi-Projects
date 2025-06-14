@@ -33,7 +33,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.cookie = `referral=${referralSource}; max-age=${60 * 60 * 24 * 7}; path=/`;
 
     // Initializes EmailJS with your public key
-    emailjs.init("NGnoHNIBJboHhKT5N");
+    document.addEventListener('DOMContentLoaded', function() {
+    emailjs.init("NGnoHNIBJboHhKT5N");});
 
     // Gets the contact form element
     const contactForm = document.getElementById('contact-form');
